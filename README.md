@@ -29,5 +29,5 @@ System design can help facilitate maintenance and upgrades over the life of the 
 * [API rate limiting](https://github.com/zhouchenyu000/System-Design/tree/main/CAP-theorem)  
 * [CAP theorem](https://github.com/zhouchenyu000/System-Design/blob/main/CAP_theorem)  
 * [Load balancer](https://github.com/zhouchenyu000/System-Design/tree/main/Load-balancer)  
-* [TinyURL](https://github.com/zhouchenyu000/System-Design/TinyURL](https://github.com/ericzhou919/System-Design/tree/main/src/main/java/com/example/demo/TinyURL)  
+* [TinyURL](https://github.com/ericzhou919/System-Design/tree/main/src/main/java/com/example/demo/TinyURL)  
 
