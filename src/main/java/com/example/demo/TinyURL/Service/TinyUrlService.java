@@ -76,7 +76,7 @@ public class TinyUrlService{
         return tinyUrl;
 	}
 	public TinyUrl getTinyUrlByShortUrl(String shortUrl) {
-            return tinyUrlRepository.findByShortUrl(shortUrl);
+		return tinyUrlRepository.findByShortUrl(shortUrl);
     }
 
 	private String getRandomString() {
@@ -89,8 +89,5 @@ public class TinyUrlService{
 		}
 		return sb.toString();
 	}
-	
-
-
 
 }

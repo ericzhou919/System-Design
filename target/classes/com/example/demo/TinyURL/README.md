@@ -40,4 +40,15 @@ One-to-One：
 
 One-to-Many：
 
-- Random Number: Another implementation method is to generate a random short string and associate it with the long URL. This method does not rely on hashing or encoding algorithms, but it requires managing a mapping table to associate each short string with its corresponding long URL.
+- Random Number: Another implementation method is to generate a random short string and associate it with the long URL. This method does not rely on hashing or encoding algorithms, but it requires managing a mapping table to associate each short string with its corresponding long URL.  
+    ```cmd
+    curl -X POST -d "originalUrl=example.com" http://localhost:8080/tinyurl/random
+
+    {"tinyUrl":"http://localhost:8080/qJuCwmw","message":"success"}
+    ```
+
+    ```cmd
+    curl "http://localhost:8080/tinyurl/random?short_url=qJuCwmw"
+
+    {"id":4,"shortUrl":"qJuCwmw","long_url":"example.com"}
+    ```

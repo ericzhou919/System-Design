@@ -111,13 +111,14 @@ public class TinyUrlController<T> {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(jsonResponse);
 		}
 	}
-	@GetMapping("/random")
-	public ResponseEntity<TinyUrl> fetchDepartmentList(@RequestParam("short_url") String shortUrl) {
-	    TinyUrl tinyUrl =  tinyUrlService.getTinyUrlByShortUrl(shortUrl);
-	    if (tinyUrl == null) {
+	@GetMapping("/random/{tinyUrl}")
+	public ResponseEntity<TinyUrl> getRandomOriginalUrl(@PathVariable String tinyUrl,
+			HttpServletResponse response) throws IOException {
+		TinyUrl data =  tinyUrlService.getTinyUrlByShortUrl(tinyUrl);
+	    if (data == null) {
 	        return ResponseEntity.noContent().build();
 	    }
-	    
-	    return ResponseEntity.ok(tinyUrl);
+	    return ResponseEntity.ok(data);
 	}
+	
 }
