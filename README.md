@@ -3,7 +3,7 @@
 ###### In the process of learning.  
 
 ## What is a system?
-  
+A system is a group of interconnected or interdependent components or parts that work together to achieve a common purpose or goal. In general, a system can be thought of as a set of elements or entities that interact with each other in some way to produce a desired outcome.
 
 ## Why do we need a system design?
 The need for system design arises from the fact that complex systems require careful planning and organization in order to function effectively and efficiently.   
