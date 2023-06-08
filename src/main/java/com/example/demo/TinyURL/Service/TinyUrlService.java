@@ -72,12 +72,13 @@ public class TinyUrlService{
 			}
 		}
 		TinyUrl newUrl = new TinyUrl(null, tinyUrl,originalUrl);
-        tinyUrlRepository.save(newUrl);
-        return tinyUrl;
+		tinyUrlRepository.save(newUrl);
+		return tinyUrl;
 	}
+	
 	public TinyUrl getTinyUrlByShortUrl(String shortUrl) {
             return tinyUrlRepository.findByShortUrl(shortUrl);
-    }
+    	}
 
 	private String getRandomString() {
 		String allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
