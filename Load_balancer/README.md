@@ -51,5 +51,13 @@ Edit upstream and server in your config nginx file.
     }
 }
 ```
+Command run  
+```cmd  
+nginx
+```
+or
+```cmd  
+nginx -s reload
+```
 https://github.com/ericzhou919/System-Design/assets/77151742/500fb3c0-36be-43c4-ab5b-93c434624e78
 
