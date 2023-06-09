@@ -1,19 +1,55 @@
- ## CAP theorem     
+# Load balancer
+ 
+Load balancing refers to the efficient distribution of incoming network traffic across a group of backend servers. It can help with horizontal scaling as the number of servers increases.     
+   
+![image](https://github.com/ericzhou919/System-Design/assets/77151742/a7e197bd-cc7a-4c24-8305-70dfaa3715f7)
 
-In a distributed computer system, only support two of the following guarantees:
+## Implement by Nginx and Python  
+Create three Python servers with different ports and run them.   
 
-* Consistency - Every read receives the most recent write or an error
-* Availability - Every request receives a response, without guarantee that it contains the most recent version of the information
-* Partition Tolerance - The system continues to operate despite arbitrary partitioning due to network failures
+```python
+app1 = Flask(__name__)
+@app1.route('/')
+def server1():
+    return 'This is the first server'
 
-Because networks are not always reliable, it is necessary for systems to support partition tolerance. This means that in software design, there must be a trade-off between consistency and availability.  
+if __name__ == '__main__':
+    app1.run(port=8080)
+```
+```python
+app2 = Flask(__name__)
+@app2.route('/')
+def server2():
+    return 'This is the second server'
+if __name__ == '__main__':
+    app2.run(port=8081)
+```
+```python
+app3 = Flask(__name__)
+@app3.route('/')
+def server3():
+    return 'This is the third server'
+if __name__ == '__main__':
+    app3.run(port=8082)
+```
+Edit upstream and server in your config nginx file.  
+(/opt/homebrew/etc/nginx/nginx.conf)   
 
-* CP - consistency and partition tolerance
-Waiting for a response from the partitioned node might result in a timeout error.  
+```nginx
+ http {
+        upstream uptoyou{
+        server localhost:8080;
+        server localhost:8081;
+        server localhost:8082;
+    }
+    server{
+        listen 80;
+        server_name localhost;
+        location / {
+            proxy_pass http://uptoyou;
+        }
+    }
+}
+```
+https://github.com/ericzhou919/System-Design/assets/77151742/500fb3c0-36be-43c4-ab5b-93c434624e78
 
-    ###### CP is a good choice if the business needs require atomic reads and writes.
-
-* AP - availability and partition tolerance
-Responses return the most readily available version of the data available on any node, which might not be the latest. Writes might take some time to propagate when the partition is resolved.
-
-    ###### AP is a good choice if the business needs to allow for eventual consistency or when the system needs to continue  working despite external errors.
