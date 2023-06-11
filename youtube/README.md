@@ -24,3 +24,6 @@ Assuming we have：
 - Daily active users of 400 million.
 - A user watches 5 videos a day.
 - A total of 5 multiplied by 400 million, 2 billion views per day.
+
+### Step 3-High-Level Design
+![image](https://github.com/ericzhou919/System-Design/assets/77151742/f00b7efd-3bd8-4ad9-a3dc-37115b9678d7)
