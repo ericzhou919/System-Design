@@ -9,7 +9,7 @@
 ## Reliability
 - Refers to the ability of the system to continue functioning correctly even if one or more components fail.
 - Use redundant components, such as multiple servers or storage devices, that can take over if a primary component fails.
-- Another approach to improving reliability in distributed systems is to replicate data and workloads across multiple computers.
+- Another approach is to replicate data and workloads across multiple computers.
   
 ## Availability   
 - Refers to the ability of a system to be operable and able to perform its intended tasks.  
