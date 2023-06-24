@@ -16,5 +16,7 @@
 - An available system is not necessarily reliable.
 
 ## Efficiency
-- Refers to the ability of the system to be operational and able to perform its intended tasks.
+- Refers to the ability of the system to use its resources effectively in order to perform its intended tasks.
+- Latency: response time, the delay to obtain the first piece of data.
+- Bandwidth: throughput, amount of data delivered in a given time.
 
