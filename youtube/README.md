@@ -1,6 +1,6 @@
 # Design Youtube system
 
-### Step 1-Confirm requirement
+### Step 1-Ask the interviewer and confirm the requirements  
 
 Functional requirements：
 
