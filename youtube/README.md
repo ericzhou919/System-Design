@@ -2,19 +2,42 @@
 
 ### Step 1-Ask the interviewer and confirm the requirements  
 
-Functional requirements：
+Candidate: What features are important?  
+Interviewer: Ability to upload a video and watch a video.  
 
-- Users should be able to upload videos.
-- Users should be able to view videos.
-- Users should be able to change video quality.
-- The system should also keep the count of likes, dislikes, comments and views to present these numbers to users.
+Candidate: What clients do we need to support?  
+Interviewer: Mobile apps, web browsers, and smart TV.  
 
-Non-Functional requirements：
+Candidate: How many daily active users do we have?  
+Interviewer: 5 million  
 
-- Video uploading should be fast, and users should have a smooth streaming experience.
-- The system should be highly available, scalable, and reliable. We can compromise with consistency to offer high availability.
-- The system should offer low latency and high throughput.
-- The system should be cost-efficient.
+Candidate: What is the average daily time spent on the product?  
+Interviewer: 30 minutes.  
+
+Candidate: Do we need to support international users?  
+Interviewer: Yes, a large percentage of users are international users.  
+
+Candidate: What are the supported video resolutions?  
+Interviewer: The system accepts most of the video resolutions and formats.  
+
+Candidate: Is encryption required?  
+Interviewer: Yes  
+
+Candidate: Any file size requirement for videos?  
+Interviewer: Our platform focuses on small and medium-sized videos. The maximum allowed video size is 1GB.  
+
+Candidate: Can we leverage some of the existing cloud infrastructures provided by Amazon, Google, or Microsoft?  
+Interviewer:Yes.    
+
+Now, we focus on designing a video streaming service with the following features:
+- Ability to upload videos fast
+- Smooth video streaming
+- Ability to change video quality
+- Low infrastructure cost
+- High availability, scalability, and reliability requirements
+- Clients supported: mobile apps, web browser, and smart TV
+
+
 
 ### Step 2-Capacity estimation and System Constraints
 
