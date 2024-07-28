@@ -27,8 +27,11 @@ System design can help facilitate maintenance and upgrades over the life of the 
 
 ## Common interview questions  
 #### How to design system?
-1. Ask and confirm the requirements
-
+1. Ask and Confirm the Requirements
+2. Capacity Estimation
+3. API Design
+4. High-Level Design
+   
 ## Example  
 * [YouTube](https://github.com/ericzhou919/System-Design/tree/main/youtube)    
 * [Facebook]()    
