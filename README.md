@@ -25,10 +25,14 @@ System design helps to reduce risks associated with system failures, security br
 5. To Facilitate Maintenance and Upgrades：   
 System design can help facilitate maintenance and upgrades over the life of the system. By designing a system with scalability and flexibility in mind, system architects can make it easier to upgrade components or add new features as needed.    
 
+## Common interview questions  
+#### How to design system?
+1. Ask and confirm the requirements
+
 ## Distributed System  
 * [Key Characteristics](https://github.com/ericzhou919/System-Design/blob/main/distributed_system/key_characteristics.md)    
 * [Caching](distributed_system/caching.md)
-## Common interview questions  
+## Example  
 * [YouTube](https://github.com/ericzhou919/System-Design/tree/main/youtube)    
 * [Facebook]()    
 * [Twitter]()    
