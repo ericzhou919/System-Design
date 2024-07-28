@@ -29,9 +29,6 @@ System design can help facilitate maintenance and upgrades over the life of the 
 #### How to design system?
 1. Ask and confirm the requirements
 
-## Distributed System  
-* [Key Characteristics](https://github.com/ericzhou919/System-Design/blob/main/distributed_system/key_characteristics.md)    
-* [Caching](distributed_system/caching.md)
 ## Example  
 * [YouTube](https://github.com/ericzhou919/System-Design/tree/main/youtube)    
 * [Facebook]()    
